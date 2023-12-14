@@ -126,7 +126,7 @@ function renderMoves(moveInformer, movesCount){
     moveInformer.text(movesCount);
 }
 $(document).ready(()=>{
-    console.log("ready");
+    // console.log("ready");
     const game = $('.game');
     const timeInformer = $('.time__informer>.info__block-content');
     const moveInformer = $('.moves__informer>.info__block-content');
@@ -147,8 +147,8 @@ $(document).ready(()=>{
     renderMoves(moveInformer, movesCount);
     // timeInformer.text(startTime.toLocaleTimeString())
     game.children().remove();
-    console.log(Object.keys(card_name).length);
-    console.log(Object.keys(card_name));
+    // console.log(Object.keys(card_name).length);
+    // console.log(Object.keys(card_name));
     for (let i = 0;i<Object.keys(cards_famaly).length;i++){
         game.append(
             CardRaw.renderRow(7, card)
